@@ -1,0 +1,50 @@
+*{
+    list-style: none;
+    margin: 0; 
+    text-decoration: none;
+}
+
+a{
+    color: green;
+}
+
+
+body{
+    background-color: pink;
+}
+
+/* cabeça */
+
+.contenierCabeca {
+    display: flex;
+    align-items: center;
+    justify-content:  space-evenly;
+    padding-bottom:10px ;
+    padding-top:10px;
+
+}
+
+
+.Titulo {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.pika{
+    background-color: azure;
+    margin-top: 0px;
+    margin-left: 100px;
+    margin-top: 10px;
+    margin-right: 100px;
+    border-radius: 10px;
+    
+}
+
+.box{
+    background-color: blue;
+    margin: 25px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+}
