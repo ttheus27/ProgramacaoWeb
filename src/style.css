@@ -10,7 +10,7 @@ a{
 
 
 body{
-    background-color: pink;
+    background-color: rgb(215, 251, 235);
 }
 
 /* cabeça */
@@ -32,7 +32,7 @@ body{
 }
 
 .pika{
-    background-color: azure;
+    background-color: rgb(106, 233, 159);
     margin-top: 0px;
     margin-left: 100px;
     margin-top: 10px;
@@ -42,7 +42,7 @@ body{
 }
 
 .box{
-    background-color: blue;
+    background-color: rgb(47, 154, 47);
     margin: 25px;
     padding-top: 5px;
     padding-bottom: 15px;
