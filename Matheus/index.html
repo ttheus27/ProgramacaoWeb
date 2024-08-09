@@ -24,17 +24,18 @@
                     var email = "";
                     var senha = "";
                     var email_verifica = "teste@teste";
-                    var senha_verifica = 1234
+                    var senha_verifica = "1234"; 
+                    
+                    email = document.getElementById("email").value;
+                    senha = document.getElementById("senha").value;
 
-
-                    // email = document.getElementById("email").value;
-                    // senha = document.getElementById("senha").value;
-
-                    if (email=== email_verifica && senha=== senha_verifica){
+                    if (email === email_verifica && senha === senha_verifica){
                         alert("Deu certo");
-                        
+                        window.location = "https://www.linkedin.com/in/matheus-silva-9018902a2/"
+
                     } else{
                         alert("Nao deu certo");
+                        console.log("Nao deu certo.")
                     }
                     alert("Seu e-mail é: "+ email + "e sua senha é: "+ senha);
                 }
@@ -51,17 +52,14 @@
 
             }
 
-
-            //     nao funcionou
-            // function obj(){
-            //     const sales = "Toyota";
-
-            //     function cerTypes (name){
-            //         return name === "Honda" ? name `Sorry, we dont sell ${name}`;
-
-            //     }
-            //     const car = {myCar: "Fusca", getCar: carTypes()}
-            //  }
+            function objetos(){
+				const sales = "Toyota";
+				function carTypes(name){
+					return name === "Honda" ? name: `Sorry, we don´t sell ${name}. `;
+				}
+				const car = { myCar: "Fusca", getCar: carTypes("Fusca"), special: sales };
+				console.log(car);
+			}
             
          </script>
         <title>Minha pagina</title>
