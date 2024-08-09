@@ -1,0 +1,5 @@
+Crie duas variavis com email senha de verificação 
+Se o valor que estiver sendo recebido por getElementById for igual aos
+valores email e senha de verificação, entao faça um redirecionamento da pagina
+para www.google.com.br, porem antes disso dispare um alerta dizendo que o usuario e senha digitadas estao corretos, caso contrario dispare
+um alerta dizendo"email e senha errados"

@@ -5,15 +5,99 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- <script src="script.js"></script> -->
          <script>
-            const MY_OBJECT = {key:"value"};
-            console.log (MY_OBJECT);
-            MY_OBJECT.key = "otherValue";
-            console.log (MY_OBJECT);
+            function consultar(){
+                var ID_teste= "";
+                var ID_testedate = "";
+                var ID_testenum = "";
+
+                ID_teste = document.getElementById("ID_teste").value ;
+                ID_testenum = document.getElementById("ID_testenum").value ;
+                ID_testedate = document.getElementById("ID_testedate").value ;
+
+                console.log ("Para id_teste",ID_teste);
+                console.log ("Para ID_testenum", ID_testenum);
+                console.log ("Para ID_testedate", ID_testedate);
+
+               
+            }
+             function login (){
+                    var email = "";
+                    var senha = "";
+                    var email_verifica = "teste@teste";
+                    var senha_verifica = 1234
+
+
+                    // email = document.getElementById("email").value;
+                    // senha = document.getElementById("senha").value;
+
+                    if (email=== email_verifica && senha=== senha_verifica){
+                        alert("Deu certo");
+                        
+                    } else{
+                        alert("Nao deu certo");
+                    }
+                    alert("Seu e-mail é: "+ email + "e sua senha é: "+ senha);
+                }
+
+            function arrays(){
+                var posicao = document.getElementById("posicao").value;
+                const name = [];
+                name.push ("Matheus");
+                name.push ("Matheusss");
+                name.push ("Matheusssss");
+                alert("O tamanho é: "+ name.length);
+                console.log (name);
+                document.getElementById("id_resultado").innerHTML = name[posicao];
+
+            }
+
+
+            //     nao funcionou
+            // function obj(){
+            //     const sales = "Toyota";
+
+            //     function cerTypes (name){
+            //         return name === "Honda" ? name `Sorry, we dont sell ${name}`;
+
+            //     }
+            //     const car = {myCar: "Fusca", getCar: carTypes()}
+            //  }
+            
          </script>
         <title>Minha pagina</title>
     </head>
     <body>
         <h1>Hello World!!</h1>
-        
+        <ul>
+            <li><input type="text" id="ID_teste" name="teste">
+            <li><input type="number" id="ID_testenum" name="teste">                
+            <li><input type="datetime-local" id="ID_testedate" name="teste">
+            <li><button onclick="consultar();">Consultar</button>
+        </ul>
+
+        <hr>
+        <div>
+            <div>Digite seu Email</div>
+            <div><input type="text" id="email" name="email"></div>
+        </div>
+        <div>
+            <div>Senha</div>
+        <div><input type="passawrd" id="senha" name="senha"></div>
+        </div>
+        <div>
+            <div><button onclick="login();">Log in</button></div>
+        </div>
+
+        <div>
+            <div><button onclick="arrays();">Chamar a função ARRAYS</button></div>
+        </div>
+        <div>
+            <h1>Posição</h1>
+            <div><input type="text" id="posicao"></div>
+        </div>
+
+        <div>
+            <h1 id="id_resultado"></h1>
+        </div>
     </body>
 </html>
