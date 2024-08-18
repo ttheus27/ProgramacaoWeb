@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        // function getMonthName(mo){
+        //     mo--;
+        //     const months=[
+        //         "Jan", "Feb", "Mar", "Apr", "May",
+        //          "Jun", "Jul", "Aug", "Sep", "Oct", "Nov","Dec"
+        //     ];
+        //     if(months[mo]){
+        //         return months[mo];
+            
+        //     }else{
+        //         throw new error ("TnvalidMonthNo");
+        //     }
+        // }  
+
+        // function getMes(){
+        //     var myMonth = document.getElementById("exec_3").value ;
+        //     if(myMonth < 1 || myMonth >12){
+        //         alert("Nao vai dar");
+
+        //     }else{
+        //         try{
+        //             monthName = getMonthName(myMonth);
+        //             alert(monthName);
+
+        //         } catch(e){
+        //             monthName= "Unknown";
+        //             alert(monthName);
+        //             console.log(e);
+        //         }
+        //     }
+        // }
+        function exec_4(){
+            const nomes = ["João", "Maria", "Pedro", "Ana", "Carlos", "Fernanda", "Gustavo", "Helena", "Igor", "Júlia"];
+
+            const ul = document.getElementById("listaPai");
+            for(var i = 0 ; i< 10; i ++){
+                const li =document.createElement("li");
+                li.textContent = nomes[i];
+                ul.appendChild(li);
+            }
+
+        }
+
+
+    </script>
+</head>
+<body>
+    <!-- <div>
+        <h1>Exercicio 3</h1>
+            <label for="">Exercicio 3</label>
+            <input type="text" id="exec_3">
+            <div><button onclick="getMes();">Teste</button></div>
+    </div> -->
+
+        
+    <div>
+        <h1>Desafio aula 15/08</h1>
+        <button onclick="exec_4();">teste</button>
+            <ul id="listaPai"></ul>
+        
+    </div>
+
+    <hr>
+        <label for="">Exercicio 3 </label>
+        <select name="listaselect" id="listaselect">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+</body>
+</html>

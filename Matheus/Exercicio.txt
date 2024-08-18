@@ -3,3 +3,34 @@ Se o valor que estiver sendo recebido por getElementById for igual aos
 valores email e senha de verificação, entao faça um redirecionamento da pagina
 para www.google.com.br, porem antes disso dispare um alerta dizendo que o usuario e senha digitadas estao corretos, caso contrario dispare
 um alerta dizendo"email e senha errados"
+
+2- 
+Escrever um arquivo HTML, com JS, onde receva uma informação via INPUT TYPE "text" e mostre essa informalçao atravez de um alert 
+e o mesmo deve ser disparado de um "onclick "de um botao
+
+
+HTML 
+<div>
+            <h1>Exercicio 2</h1>
+            <input type="text" id="Exemplo_2">
+            <div><button onclick="Alert();">Teste</button></div>
+
+        </div>
+
+JS 
+function Alert(){
+                var Exemplo_2 ="";
+
+                Exemplo_2 = document.getElementById("Exemplo_2").value ;
+
+                alert ("Foi digitado: " +Exemplo_2);
+
+            }
+
+
+----------------------------------------------------
+
+3- 
+
+crie uma lista nao ordenada <ul> que tennha 10 itens, ariunidos de uma array podendp ser 10 nomes e mostre isso na tela 
+ustilizando o laço for para varrer o array e imprimir na tela os "li"'s

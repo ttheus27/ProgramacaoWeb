@@ -60,6 +60,25 @@
 				const car = { myCar: "Fusca", getCar: carTypes("Fusca"), special: sales };
 				console.log(car);
 			}
+
+            // function Alert(){
+            //     var Exemplo_2 ="";
+
+            //     Exemplo_2 = document.getElementById("Exemplo_2").value ;
+
+            //     alert ("Foi digitado: " +Exemplo_2);
+
+            // }
+
+            function valida(){
+                var Exemplo_2 = document.getElementById("Exemplo_2").value;
+                if(Exemplo_2 == "Matheus"){
+                    alert ("Deu certo");
+
+                }else {
+                    alert ("Deu errado");
+                }
+            }
             
          </script>
         <title>Minha pagina</title>
@@ -96,6 +115,13 @@
 
         <div>
             <h1 id="id_resultado"></h1>
+        </div>
+        <div>
+            <h1>Exercicio 2</h1>
+            <label for="">Exercicio 2</label>
+            <input type="text" id="Exemplo_2">
+            <div><button onclick="valida();">Teste</button></div>
+
         </div>
     </body>
 </html>
