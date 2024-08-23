@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira Pagina</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function login (){
+        var email = "";
+        var senha = "";
+        var nome ="";
+        var email_verifica = "teste@teste";
+        var senha_verifica = "1234"; 
+        var nome_verifica = "Matheus"; 
+                    
+        email = document.getElementById("email").value;
+        senha = document.getElementById("password").value;
+        nome = document.getElementById("name").value;
+
+
+        if (email === email_verifica && senha === senha_verifica && nome === nome_verifica){
+            alert("Deu certo");
+            window.location = "./JS/index.html"
+
+            } else{
+                alert("Nao deu certo");
+                console.log("Nao deu certo.")
+            }
+            alert("Seu e-mail é: "+ email + "e sua senha é: "+ senha + "Seu nome é: "+ nome);
+        }
+    </script>
+
+    <!-- Link para o favicon -->
+    <!-- Alternativamente, se você usar um formato diferente -->
+    <!-- <link rel="icon" href="favicon.png" type="image/png"> -->
+</head>
+
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <!-- Menu de navegação -->
+        <nav>
+            <ul>
+                <li><a href="#sobreNos">HOME</a></li>
+                <li><a href="#doeAqui">DOE AQUI</a></li>
+                <li><a href="#parceiros">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <div class="content">
+        <div class="foto">
+            <img src="img1.jfif" alt="">
+        </div>
+
+        <!-- Seção de Login -->
+        <div id="container">
+            <div id="login_form">
+                <div id="form_header">
+                    <h1>Login</h1>
+                    <i id="mode_icon" class="fa-solid fa-moon"></i>
+                </div>
+                <div id="social_media">
+                    <a href="#">
+                        <img src="img/facebook.png" alt="Facebook">
+                    </a>
+                    <a href="#">
+                        <img src="img/github.png" alt="Github">
+                    </a>
+                    <a href="#">
+                        <img src="img/google.png" alt="Google">
+                    </a>
+                </div>
+                <div id="inputs">
+                    <div class="input-box">
+                        <label for="name">
+                            Name
+                            <div class="input-field">
+                                <i class="fa-solid fa-user"></i>
+                                <input type="text" id="name" name="name">
+                            </div>
+                        </label>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">
+                            E-mail
+                            <div class="input-field">
+                                <i class="fa-solid fa-envelope"></i>
+                                <input type="text" id="email" name="email">
+                            </div>
+                        </label>
+                    </div>
+                    <div class="input-box">
+                        <label for="password">
+                            Password
+                            <div class="input-field">
+                                <i class="fa-solid fa-key"></i>
+                                <input type="password" id="password" name="password">
+                            </div>
+                        </label>
+                        <div id="forgot_password">
+                            <a href="#">Forgot your password?</a>
+                            <span>|</span>
+                            <a href="#">Don't have an account?</a>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" id="login_button" onclick="login()">
+                    Login
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seção "Sobre Nós" -->
+    <main id="sobreNos" class="sobreNos">
+        <h1>Minha primeira Página em HTML</h1>
+        <h2>Sobre</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione quaerat labore iure beatae maxime ducimus quasi, molestias culpa? Sequi ea ducimus, dolore nulla deleniti omnis minus ut. Amet, ut cumque!</p>
+    </main>
+
+    <!-- Seção "Doe Aqui" -->
+    <div id="doeAqui" class="doeAqui">
+        <h2>Sobre!!!</h2>
+        <p class="doeAquip">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quidem excepturi necessitatibus commodi voluptate laudantium odio voluptas qui error, eaque, praesentium fuga provident! Sed repudiandae, ea deleniti ipsum dignissimos laborum!</p>
+    </div>
+
+    <!-- Seção "Parceiros" -->
+    <div id="parceiros" class="parc">
+        <h2>Sobre</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eligendi odit pariatur recusandae ea nihil, mollitia, facilis laborum soluta aperiam id. Dicta, cupiditate dolore. Esse, animi amet. Similique, iste sunt!</p>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a38f2107de.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

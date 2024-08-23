@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        function nome(){
+            var id_nome = "";
+            id_nome = document.getElementById("id_nome").value ;
+            id_data = document.getElementById("id_data").value;
+
+
+            console.log("Nome da pessoa: "+ id_nome);
+            console.log("idade da pessoa: "+ id_data);
+
+            const li = document.createElement("li");
+            li.textContent = id_nome + " - " + id_data; // Concatena o nome e a data
+
+  // Adicione o li à lista (se você tiver uma lista):
+            const lista = document.getElementById("minha-lista"); // Substitua "minha-lista" pelo ID da sua lista
+            lista.appendChild(li);
+        }
+
+        
+
+    </script>
+</head>
+<body>
+    <div>
+        <ul class="contenierCabeca">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div>
+        <img src="./360_F_321243084_GstfWflk1eTLlzUdRZ5mjoP5IG1iCc8J.jpg" alt="img HTML CSS JS">
+    </div>
+
+
+    <div>
+        <div>
+            <p>Digite seu nome</p>
+            <input type="text" id="id_nome">
+            <button onclick="nome();">Consultar</button>
+        </div>
+        <div>
+            <p>Coloque sua idade</p>
+            <input type="date" id="id_data">
+
+        </div>        
+        <div>
+            <ul id="minha-lista">
+            </ul>
+        </div>
+    </div>
+
+    
+</body>
+</html>
